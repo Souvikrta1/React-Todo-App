@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    height:100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container{
+    max-width:980px;
+    background-color: red;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 7.5%;
+}
+
+.container h1{
+    text-align: center;
+}
+
+form{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.todo-input{
+    width: 80%;
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    margin-bottom: 2.5%;
+}
+
+form button{
+    width: max-content;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    background-color: yellowgreen;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    height: 30px;
+    padding: 0 1%;
+}
+
+.todolist-container{
+    background-color: black;
+    height: 70%;
+    overflow: scroll;
+}
+
+.todolist-container::-webkit-scrollbar{
+    width: 10%;
+}
+
+.list-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 80%;
+    margin: 1% 10%;
+    border-radius: 10px;
+    height: max-content;
+    padding: 1% 0;
+}
+
+.list-items input{
+    border: none;
+    margin-left: 1%;
+    margin-right: 28%;
+    width: 70%;
+    background-color: transparent;
+    pointer-events: none;
+    font-size: large;
+    font-weight: 700;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+
+.list-items button{
+    height: max-content;
+    width: max-content;
+    padding: 0.5% 1%;
+    margin-left: 1.5%;
+    margin-right: 0.5%;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.edit{
+    
+    background-color: yellowgreen;
+}
+
+.delete{
+    background-color: rgb(219, 4, 4);
+}
+
+.Done{
+    background-color: green;
+}
+
+.Pending{
+    background-color: rgb(204, 3, 3);
+}
+
+
+@media only screen and (max-width:600px){
+    .todo-input{
+        width: 100%;
+
+    }
+    .container{
+        width: 100%;
+    }
+    .list-items{
+        width: 80%;
+        flex-wrap: wrap;
+    }
+    .list-items input{
+        width:max-content;
+        margin-left: 30%;
+        text-align: center;
+        margin-bottom: 1%;
+    }
+    .list-items button{
+        padding: 1.5% 2% ;
+    }
+}
